@@ -1,0 +1,12 @@
+/Users/onnassiz/RiderProjects/JBoxIDServer/bin/Debug/netcoreapp2.0/JBoxIDServer.deps.json
+/Users/onnassiz/RiderProjects/JBoxIDServer/bin/Debug/netcoreapp2.0/JBoxIDServer.runtimeconfig.json
+/Users/onnassiz/RiderProjects/JBoxIDServer/bin/Debug/netcoreapp2.0/JBoxIDServer.runtimeconfig.dev.json
+/Users/onnassiz/RiderProjects/JBoxIDServer/bin/Debug/netcoreapp2.0/JBoxIDServer.dll
+/Users/onnassiz/RiderProjects/JBoxIDServer/bin/Debug/netcoreapp2.0/JBoxIDServer.pdb
+/Users/onnassiz/RiderProjects/JBoxIDServer/obj/Debug/netcoreapp2.0/JBoxIDServer.csproj.CoreCompileInputs.cache
+/Users/onnassiz/RiderProjects/JBoxIDServer/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+/Users/onnassiz/RiderProjects/JBoxIDServer/obj/Debug/netcoreapp2.0/JBoxIDServer.AssemblyInfoInputs.cache
+/Users/onnassiz/RiderProjects/JBoxIDServer/obj/Debug/netcoreapp2.0/JBoxIDServer.AssemblyInfo.cs
+/Users/onnassiz/RiderProjects/JBoxIDServer/obj/Debug/netcoreapp2.0/JBoxIDServer.dll
+/Users/onnassiz/RiderProjects/JBoxIDServer/obj/Debug/netcoreapp2.0/JBoxIDServer.pdb
+/Users/onnassiz/RiderProjects/JBoxIDServer/obj/Debug/netcoreapp2.0/JBoxIDServer.csprojResolveAssemblyReference.cache
