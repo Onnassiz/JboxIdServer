@@ -2,7 +2,8 @@
   "runtimeOptions": {
     "additionalProbingPaths": [
       "/Users/onnassiz/.dotnet/store/|arch|/|tfm|",
-      "/Users/onnassiz/.nuget/packages"
+      "/Users/onnassiz/.nuget/packages",
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
     ]
   }
 }
