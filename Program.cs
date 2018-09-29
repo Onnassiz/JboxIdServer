@@ -14,6 +14,7 @@ namespace IdentityServerWithAspNetIdentity
     {
         public static void Main(string[] args)
         {
+            DotNetEnv.Env.Load(".env");
             Console.Title = "IdentityServerWithAspNetIdentity";
 
             BuildWebHost(args).Run();
@@ -21,7 +22,7 @@ namespace IdentityServerWithAspNetIdentity
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>().UseUrls("http://localhost:5000").ConfigureLogging((hostingContext, logging) =>
+                .UseStartup<Startup>().UseUrls(Environment.GetEnvironmentVariable("HOST")).ConfigureLogging((hostingContext, logging) =>
                 {
                     logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
                     logging.AddConsole();

@@ -26,8 +26,10 @@ namespace IdentityServerWithAspNetIdentity
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
+
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseNpgsql(connectionString));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
@@ -50,8 +52,8 @@ namespace IdentityServerWithAspNetIdentity
             services.AddAuthentication()
                 .AddGoogle(options =>
                 {
-                    options.ClientId = "998042782978-s07498t8i8jas7npj4crve1skpromf37.apps.googleusercontent.com";
-                    options.ClientSecret = "HsnwJri_53zn7VcO1Fm7THBb";
+                    options.ClientId = Environment.GetEnvironmentVariable("GOOGLE_CLIENT_ID");
+                    options.ClientSecret = Environment.GetEnvironmentVariable("GOOGLE_CLIENT_SECRET");
                 });
         }
 

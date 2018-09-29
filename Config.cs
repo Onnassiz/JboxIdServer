@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
+using System;
 using IdentityServer4;
 using IdentityServer4.Models;
 using System.Collections.Generic;
@@ -43,9 +44,9 @@ namespace IdentityServerWithAspNetIdentity
 
                     RequireConsent = false,
 
-                    RedirectUris =           { "http://localhost:3000/callback.html" },
-                    PostLogoutRedirectUris = { "http://localhost:3000" },
-                    AllowedCorsOrigins =     { "http://localhost:3000"},
+                    RedirectUris =           { Environment.GetEnvironmentVariable("JBOX_HOST_CALLBACK") },
+                    PostLogoutRedirectUris = { Environment.GetEnvironmentVariable("JBOX_HOST") },
+                    AllowedCorsOrigins =     { Environment.GetEnvironmentVariable("JBOX_HOST") },
 
                     AccessTokenLifetime = 172800,
 
